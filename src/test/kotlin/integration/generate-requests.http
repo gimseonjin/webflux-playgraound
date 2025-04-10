@@ -1,0 +1,23 @@
+POST http://localhost:9090/api/v1/users/sign-up
+Content-Type: application/json
+
+{
+  "email": "kerry@gmail.com",
+  "password": "12345678",
+  "username": "kerry",
+  "profileUrl": "https://example.com/profile.jpg"
+}
+
+###
+POST http://localhost:9090/api/v1/users/sign-in
+Content-Type: application/json
+
+{
+  "email": "kerry@gmail.com",
+  "password": "12345678"
+}
+
+###
+POST http://localhost:9090/api/v1/users/sign-out
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJrZXJyeSIsImF1ZCI6ImF1dGgiLCJpZCI6MSwibmFtZSI6ImtlcnJ5IiwiZW1haWwiOiJrZXJyeUBnbWFpbC5jb20iLCJwcm9maWxlVXJsIjoiaHR0cHM6Ly9leGFtcGxlLmNvbS9wcm9maWxlLmpwZyIsImV4cCI6MTc0NDI4NTAxM30.Tn4aiwcEpZ9Ywb5t-J_KqSboDq0_crnVaKCxAlRn8N8
+
